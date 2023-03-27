@@ -3,7 +3,6 @@ import Restaurant from "../models/Restaurant.js";
 // CREATE
 export const createRestaurant = async (req, res) => {
   try {
-    console.log("asd");
     const {
       name,
       desc,
@@ -26,10 +25,8 @@ export const createRestaurant = async (req, res) => {
       isOpen,
       rating,
     });
-    console.log(req.file);
     await newRestaurant.save();
-    const restaurants = await Restaurant.find();
-    res.status(201).json(restaurants);
+    res.status(201).json(newRestaurant);
   } catch (error) {
     res.status(409).json({ message: error.message });
   }

@@ -3,7 +3,6 @@ import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
-import multer from "multer";
 import helmet from "helmet";
 import morgan from "morgan";
 import path from "path";
@@ -24,16 +23,6 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 
-// FILE STORAGE
-const storage = multer.diskStorage({
-  destination: (req, res, cb) => {
-    cb(null, "public/assets");
-  },
-  filename: (req, res, cb) => {
-    cb(null, file.originalname);
-  },
-});
-const upload = multer({ storage });
 // ROUTES
 app.use("/restaurants", restaurantRoutes);
 
