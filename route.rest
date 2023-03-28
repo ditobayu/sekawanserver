@@ -11,18 +11,26 @@ content-type: application/json
     "message": "sssss"
 }
 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.0017059452853!2d112.61641921425377!3d-7.998759294239529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788394af4940d5%3A0x5b2817ac757dbb4b!2sMie%20Gacoan%20Sukun!5e0!3m2!1sid!2sid!4v1679980741180!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 ###
 POST http://localhost:3001/restaurants HTTP/1.1
 content-type: application/json
 
 {
-      "name":"asdasd",
-      "desc":"apakek",
+      "name":"Mie Gacoan",
+      "desc":"Restoran mie Gacoan adalah sebuah restoran yang terkenal di Indonesia karena spesialisasinya dalam menyajikan berbagai macam hidangan mie dengan rasa yang lezat dan beragam. Restoran ini memiliki konsep warung mie yang sederhana dan ramah lingkungan dengan suasana yang santai dan nyaman.
+
+Mie Gacoan menyajikan berbagai jenis mie seperti mie ayam, mie goreng, mie kuah, mie seafood, dan mie spesial yang diolah dengan bahan-bahan berkualitas tinggi dan dibuat secara fresh setiap hari. Selain itu, restoran ini juga menyediakan berbagai pilihan topping dan saus yang dapat disesuaikan dengan selera pengunjung.
+
+Selain hidangan mie, restoran ini juga menyediakan berbagai menu makanan pendamping seperti pangsit, siomay, batagor, tahu isi, dan masih banyak lagi. Semua hidangan yang disajikan di restoran mie Gacoan diproses dengan cara yang higienis dan dijamin kebersihannya sehingga aman untuk dikonsumsi.
+
+Restoran mie Gacoan telah memiliki banyak cabang di berbagai kota di Indonesia dan menjadi pilihan favorit bagi banyak orang karena selain rasa yang enak, harganya juga terjangkau dan pelayanan yang ramah dan cepat.",
       "map":"apakek",
       "image":"apakek",
       "categories":"asdasd",
-      "minPrice":100,
-      "maxPrice":200,
+      "minPrice":100000,
+      "maxPrice":200000,
       "isOpen":true,
       "rating":[true,true,true,false,false]
 }

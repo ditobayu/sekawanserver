@@ -23,7 +23,7 @@ export const createRestaurant = async (req, res) => {
       minPrice,
       maxPrice,
       isOpen,
-      rating,
+      rating: rating.split(","),
     });
     await newRestaurant.save();
     res.status(201).json(newRestaurant);
